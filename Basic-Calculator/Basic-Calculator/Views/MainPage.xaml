@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Basic_Calculator.MainPage">
+    
+    <ContentPage.Content>
+        <Grid RowSpacing="5" ColumnSpacing="7" BackgroundColor="CadetBlue">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Label Grid.ColumnSpan="4"
+                         BackgroundColor="CadetBlue"
+                         Text="Welcome to Xamarin.Forms!" 
+                         HorizontalTextAlignment="End"
+                         VerticalTextAlignment="Center"
+                         TextColor="White" 
+                         FontSize="36"
+                        LineBreakMode="NoWrap"
+                        FontAttributes="Bold"/>
+                        
+            <Button Grid.Row="1" 
+                        Grid.Column="0"
+                        Style="{StaticResource btnNumeros}"
+                        Text="7"/>
+            <Button Grid.Row="1" 
+                        Grid.Column="1"
+                        Style="{StaticResource btnNumeros}"
+                        Text="8"/>
+            <Button Grid.Row="1" 
+                        Grid.Column="2"
+                        Style="{StaticResource btnNumeros}"
+                        Text="9"/>
+            <Button Grid.Row="1" 
+                        Grid.Column="3"
+                        Style="{StaticResource btnOperaciones}"
+                        Text="C"/>
+            <Button Grid.Row="2" 
+                        Grid.Column="0"
+                        Style="{StaticResource btnNumeros}"
+                        Text="4"/>
+            <Button Grid.Row="2" 
+                        Grid.Column="1"
+                        Style="{StaticResource btnNumeros}"
+                        Text="5"/>
+            <Button Grid.Row="2" 
+                        Grid.Column="2"
+                        Style="{StaticResource btnNumeros}"
+                        Text="6"/>
+            <Button Grid.Row="2" 
+                        Grid.Column="3"
+                        Style="{StaticResource btnOperaciones}"
+                        Text="+"/>
+            <Button Grid.Row="3" 
+                        Grid.Column="0"
+                        Style="{StaticResource btnNumeros}"
+                        Text="1"/>
+            <Button Grid.Row="3" 
+                        Grid.Column="1"
+                        Style="{StaticResource btnNumeros}"
+                        Text="2"/>
+            <Button Grid.Row="3" 
+                        Grid.Column="2"
+                        Style="{StaticResource btnNumeros}"
+                        Text="3"/>
+            <Button Grid.Row="3" 
+                        Grid.Column="3"
+                        Style="{StaticResource btnOperaciones}"
+                        Text="-"/>
+            <Button Grid.Row="4" 
+                        Grid.Column="0"
+                        Style="{StaticResource btnNumeros}"
+                        Text="0"
+                        Grid.ColumnSpan="3"/>
+            <Button Grid.Row="4" 
+                        Grid.Column="3"
+                        Style="{StaticResource btnOperaciones}"
+                        Text="*"/>
+            <Button Grid.Row="5" 
+                        Grid.Column="0"
+                        Style="{StaticResource btnOperaciones}"
+                        Text="."/>
+            <Button Grid.Row="5" 
+                        Grid.Column="1"
+                        Style="{StaticResource btnOperaciones}"
+                        Text="="
+                        Grid.ColumnSpan="2"/>
+            <Button Grid.Row="5" 
+                        Grid.Column="3"
+                        Style="{StaticResource btnOperaciones}"
+                        Text="/"/>
+        </Grid>
+    </ContentPage.Content>
+   
+</ContentPage>

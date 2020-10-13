@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
-namespace Basic_Calculator
+namespace Basic_Calculator.Views
 {
     public partial class MainPage : ContentPage
     {
@@ -81,10 +81,20 @@ namespace Basic_Calculator
             }
         }
 
+        void SelectDecimal(object sender, EventArgs e)
+        {
+            Button btnDecimal = (Button)sender;
+            if(estadoActual == 1)
+                txtResultado.Text = firstNumber + btnDecimal.Text;
+            else
+                txtResultado.Text = secondNumber + btnDecimal.Text;
+        }
+
         void Clear(object sender, EventArgs e)
         {
             firstNumber = 0;
             secondNumber = 0;
+            estadoActual = 1;
             txtResultado.Text = "0";
         }
     }
